@@ -24,9 +24,11 @@ app.use(
 
 // Import routes
 const carRoutes = require("./routes/carRoutes");
+const authRoutes = require("../src/routes/authRoutes");
 
 // Use routes
 app.use("/cars", carRoutes);
+app.use("/auth", authRoutes);
 
 // Start server
 app.listen(PORT, () => {
