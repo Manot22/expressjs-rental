@@ -1,4 +1,4 @@
-const prisma = require("../db/index");
+const prisma = require("../db");
 
 class UserRepository {
   async findByEmail(email) {

@@ -52,7 +52,7 @@ class AuthService {
     // Cari user berdasarkan email
     const user = await UserRepository.findByEmail(email);
     if (!user) {
-      throw new Error("Invalid email or password");
+      throw new Error("Invallid email or password");
     }
 
     // Cek password

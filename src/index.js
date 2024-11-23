@@ -19,12 +19,13 @@ app.use(
   cors({
     origin: process.env.FRONTEND_URL || "http://localhost:3000",
     optionsSuccessStatus: 200,
+    credentials: true,
   })
 );
 
 // Import routes
 const carRoutes = require("./routes/carRoutes");
-const authRoutes = require("../src/routes/authRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 // Use routes
 app.use("/cars", carRoutes);

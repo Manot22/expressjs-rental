@@ -1,4 +1,3 @@
-// src/repositories/carRepository.js
 const prisma = require("../db/index");
 
 class CarRepository {
